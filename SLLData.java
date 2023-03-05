@@ -44,6 +44,7 @@ public class SLLData {
     }
     public int listLength() { 
         ListNode current = head;
+        if(current == 0) { return 0;}
         int count = 0;
         while (current != null) { 
             count++;

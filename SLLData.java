@@ -10,7 +10,7 @@ import java.util.*;
 import java.io.*;
 public class SLLData { 
     private ListNode head;
-    private static class LinkedList { 
+    private static class ListNode { 
         private int data; // Generic type: This contains the actual value
         private ListNode next; // Pointer to the next node
         
@@ -22,15 +22,33 @@ public class SLLData {
     public static void main(String[] args) {
         SLLData sll = new SLLData(); // Abbreviation for singly linked list 
         sll.head = new ListNode(10);
-        SLLData second = new SLLData(1);
-        SLLData third = new SLLData(8);
-        SLLData fourth = new SLLData(11);
+        ListNode second = new ListNode(1);
+        ListNode third = new ListNode(8);
+        ListNode fourth = new ListNode(11);
 
         // Now we will connect them together to form a chain
         sll.head.next = second; //10 --> 1
         second.next = third; // 10 --> 1 --> 8
         third.next = fourth; // 10 --> 1 --> 8 --> 11 --> null
-
-
+        
+        int listElements = sll.listLength();
+        System.out.println("The length of the list is: " + listElements);
+    }
+    public void display() { 
+        ListNode current = head;
+        while(current != null) { 
+            System.out.print(current.data + "->");
+            current = current.next;
+        }
+        System.out.print("null");
+    }
+    public int listLength() { 
+        ListNode current = head;
+        int count = 0;
+        while (current != null) { 
+            count++;
+            current = current.next;
+        }
+        return count;
     }
 }

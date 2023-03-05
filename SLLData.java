@@ -31,8 +31,10 @@ public class SLLData {
         second.next = third; // 10 --> 1 --> 8
         third.next = fourth; // 10 --> 1 --> 8 --> 11 --> null
         
+        sll.insertFirst(12);
         int listElements = sll.listLength();
         System.out.println("The length of the list is: " + listElements);
+        sll.display();
     }
     public void display() { 
         ListNode current = head;
@@ -44,12 +46,17 @@ public class SLLData {
     }
     public int listLength() { 
         ListNode current = head;
-        if(current == 0) { return 0;}
+        if(current == null) { return 0;}
         int count = 0;
         while (current != null) { 
             count++;
             current = current.next;
         }
         return count;
+    }
+    public void insertFirst(int value) { 
+        ListNode newNode = new ListNode(value);
+        newNode.next = head;
+        head = newNode;
     }
 }

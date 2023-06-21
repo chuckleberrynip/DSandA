@@ -3,7 +3,7 @@
 This is how we make a multiline comment
 =end
 
-puts 3.class 
+puts 3.class
 puts "HelloWorld, this is my first ruby program"
 puts "Hello".method(:class).class
 
@@ -61,4 +61,16 @@ puts second.upcase[3...6]
 arr1 = [1,2,3,4]
 arr1.push(5)
 puts arr1
+arr1.unshift(1000);
+arr2 = Array.new(2, 4)
+# You can insert multiple values from a certain index using the insert function.
 
+puts "----------------------------------example statement-------------------------------"
+arr2.insert(2, "Something", 3)
+arr2.unshift("This has been unshifted")
+arr2.push("This has been pushed")
+puts arr2
+value = arr2.shift()
+values2 = arr2.pop()
+puts value
+puts values2

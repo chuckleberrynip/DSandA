@@ -74,3 +74,10 @@ value = arr2.shift()
 values2 = arr2.pop()
 puts value
 puts values2
+
+#You can drop the first n elements by using the drop(n) method
+arr2.drop(3)
+puts arr2
+#List only the unique items in your array by using the uniq method
+arr3 = arr2.uniq
+puts arr3

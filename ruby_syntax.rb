@@ -27,7 +27,9 @@ puts first.size
 first.upcase
 second.downcase
 puts first.upcase.reverse
+#If you want to see if a string has a value
 puts second.include? "This"
+puts second.include? "Not"
 
 #Concatenation can happen in 2 ways, one using the str.concat method and the other is using the << operator
 first.concat("Hi this is another one")
@@ -42,3 +44,13 @@ puts second
 # fourth.freeze
 # fourth.concat("Something new")
 # puts fourth
+
+#Size and length and 2 methods that do the same thing.
+puts "First " " Second"
+
+#Strings can use array notation to access individual characters.
+puts first[1]
+#There are some other javascript like things that can be used
+puts first[4..12]
+puts first[0, second.size]
+puts first[-1]

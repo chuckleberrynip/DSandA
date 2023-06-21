@@ -57,3 +57,8 @@ puts first[-1]
 
 
 puts second.upcase[3...6]
+
+arr1 = [1,2,3,4]
+arr1.push(5)
+puts arr1
+

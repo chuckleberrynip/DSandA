@@ -85,9 +85,17 @@ puts arr3
 #Now we are going to do the hash section
 #Hashes are a key value data structure
 #The => symbol can be substituted with the : symbol
+#You can iterate throughout the hash set by iterating through it using a loop.
 
 hash = {"name" => "Billy",
           "subject" => "science",
           "grade" => 3}
 puts hash
 puts "The person's name is: #{hash["name"]}"
+
+#Now we come to basic conditionals
+a = 1000
+b = 100000
+if a < b
+  puts "a is less than b"
+end

@@ -81,3 +81,13 @@ puts arr2
 #List only the unique items in your array by using the uniq method
 arr3 = arr2.uniq
 puts arr3
+
+#Now we are going to do the hash section
+#Hashes are a key value data structure
+#The => symbol can be substituted with the : symbol
+
+hash = {"name" => "Billy",
+          "subject" => "science",
+          "grade" => 3}
+puts hash
+puts "The person's name is: #{hash["name"]}"

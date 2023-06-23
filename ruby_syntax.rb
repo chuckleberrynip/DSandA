@@ -55,6 +55,12 @@ puts first[4..12]
 puts first[0, second.size]
 puts first[-1]
 
+#Conditional statement
+a = 4
+b = 8
+hello = (c = (a > b) ? "firstValue" : "secondValue")
+puts hello
+
 
 puts second.upcase[3...6]
 

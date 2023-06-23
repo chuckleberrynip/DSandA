@@ -100,9 +100,27 @@ puts hash
 puts "The person's name is: #{hash["name"]}"
 
 #Now we come to basic conditionals
+#They are not that different from the ones in python
 #merged from last commit
 a = 1000
-b = 100000
-if a < b
-  puts "a is less than b"
+b = 1000
+if a > b
+    puts "a is larger than b"
+elsif a == b
+    puts "a is equal to b"
+else
+    puts "b is larger than a"
+end
+
+#Switch statement:
+#The else statement in this case is the default case
+puts "Please enter what the day is in the form of a number"
+day = gets.chomp.to_i
+case day
+when 1
+    puts "It is monday"
+when 2
+    puts "It is tuesday"
+else
+    puts "I don't know what the day is"
 end

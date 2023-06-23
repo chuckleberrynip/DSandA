@@ -121,6 +121,11 @@ elsif a == b
 else
     puts "b is larger than a"
 end
+#There is a conditional statement the works only when the condition is false
+unless a < b
+    puts "Unless used"
+    
+end
 
 #Switch statement:
 #The else statement in this case is the default case
@@ -145,4 +150,22 @@ checker = 10
 while checker < 20
     puts "The current number: #{checker}"
     checker += 1
+end
+#If we need an additional conditional within a loop, we can 
+#then use a if-break-end conditional to break out a loop
+
+tester = 15
+while tester < 20
+    puts "Currently: #{tester}"
+    if tester == 18
+        puts "Hello"
+        break
+    end
+   tester += 1
+end
+
+#Until is a loss that works when the condition is false 
+until tester > 25
+    puts "Until used"
+    tester += 1
 end

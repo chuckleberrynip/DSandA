@@ -16,6 +16,7 @@ puts "Hello".method(:class).class
 # id = gets.chomp.to_i
 
 # puts "Your name is #{name} and your ID number is: #{id}"
+puts "++++++++++++++++++++++++++++++++ Strings ++++++++++++++++++++++++++++++++"
 
 first = "This is a string"
 second = "This is the second string"
@@ -63,7 +64,7 @@ puts hello
 
 
 puts second.upcase[3...6]
-
+puts "++++++++++++++++++++++++++++++++ Arrays ++++++++++++++++++++++++++++++++"
 arr1 = [1,2,3,4]
 arr1.push(5)
 puts arr1
@@ -107,7 +108,7 @@ end
 #if you want only the key: each_key
 #if you want only the value: each_value
 
-
+puts "++++++++++++++++++++++++++++++++ Conditionals ++++++++++++++++++++++++++++++++"
 #Now we come to basic conditionals
 #They are not that different from the ones in python
 #merged from last commit
@@ -133,7 +134,7 @@ end
 # else
 #     puts "I don't know what the day is"
 # end
-
+puts "++++++++++++++++++++++++++++++++ Loops ++++++++++++++++++++++++++++++++"
 #Now beginning iterators
 for i in 1..5
     puts "Hello"

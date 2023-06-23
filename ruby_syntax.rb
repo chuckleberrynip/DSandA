@@ -100,6 +100,7 @@ puts hash
 puts "The person's name is: #{hash["name"]}"
 
 #Now we come to basic conditionals
+#merged from last commit
 a = 1000
 b = 100000
 if a < b

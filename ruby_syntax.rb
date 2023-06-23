@@ -134,3 +134,6 @@ puts "The person's information is as follow:"
 hash.each_pair do |key, value|
     puts "#{key}: #{value}"
 end
+#There are some different variations that makes working with hashes easier
+#if you want only the key: each_key
+#if you want only the value: each_value

@@ -114,13 +114,23 @@ end
 
 #Switch statement:
 #The else statement in this case is the default case
-puts "Please enter what the day is in the form of a number"
-day = gets.chomp.to_i
-case day
-when 1
-    puts "It is monday"
-when 2
-    puts "It is tuesday"
-else
-    puts "I don't know what the day is"
+# puts "Please enter what the day is in the form of a number"
+# day = gets.chomp.to_i
+# case day
+# when 1
+#     puts "It is monday"
+# when 2
+#     puts "It is tuesday"
+# else
+#     puts "I don't know what the day is"
+# end
+
+#Now beginning iterators
+for i in 1..5
+    puts "Hello"
+end
+
+puts "The person's information is as follow:"
+hash.each_pair do |key, value|
+    puts "#{key}: #{value}"
 end

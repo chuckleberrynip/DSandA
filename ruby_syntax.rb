@@ -99,6 +99,15 @@ hash = {"name" => "Billy",
 puts hash
 puts "The person's name is: #{hash["name"]}"
 
+puts "The person's information is as follow:"
+hash.each_pair do |key, value|
+    puts "#{key}: #{value}"
+end
+#There are some different variations that makes working with hashes easier
+#if you want only the key: each_key
+#if you want only the value: each_value
+
+
 #Now we come to basic conditionals
 #They are not that different from the ones in python
 #merged from last commit
@@ -130,10 +139,9 @@ for i in 1..5
     puts "Hello"
 end
 
-puts "The person's information is as follow:"
-hash.each_pair do |key, value|
-    puts "#{key}: #{value}"
+#iterable++ doesn't work you have to use iterable += 1
+checker = 10
+while checker < 20
+    puts "The current number: #{checker}"
+    checker += 1
 end
-#There are some different variations that makes working with hashes easier
-#if you want only the key: each_key
-#if you want only the value: each_value

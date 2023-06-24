@@ -172,6 +172,8 @@ until tester > 25
 end
 
 #There is a 'next' statement that you use when you want to skip a certain value
+#Use redo if you want to re-run a certain iteration
+#Use retry if you want to re-run the entire loop
 nextTester = 5
 for i in 1..10
     if(i == nextTester)
@@ -179,3 +181,9 @@ for i in 1..10
     end
     puts "This is #{i}"
 end 
+puts "++++++++++++++++++++++++++++++++ Methods ++++++++++++++++++++++++++++++++"
+def methodTester(param1)
+    puts "Hello from within the method my name is #{param1}"
+end
+
+methodTester("Mo")

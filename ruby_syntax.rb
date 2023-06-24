@@ -154,6 +154,7 @@ end
 #If we need an additional conditional within a loop, we can 
 #then use a if-break-end conditional to break out a loop
 
+
 tester = 15
 while tester < 20
     puts "Currently: #{tester}"
@@ -169,3 +170,12 @@ until tester > 25
     puts "Until used"
     tester += 1
 end
+
+#There is a 'next' statement that you use when you want to skip a certain value
+nextTester = 5
+for i in 1..10
+    if(i == nextTester)
+        next
+    end
+    puts "This is #{i}"
+end 

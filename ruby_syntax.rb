@@ -191,9 +191,6 @@ methodTester("Mo")
 class Cup 
     #This is how you set class variables
     @name
-
-    
-
     def setName(name)
         @name = name
     end

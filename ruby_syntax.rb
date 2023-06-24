@@ -187,3 +187,21 @@ def methodTester(param1)
 end
 
 methodTester("Mo")
+
+class Cup 
+    #This is how you set class variables
+    @name
+
+    
+
+    def setName(name)
+        @name = name
+    end
+    def getName() 
+        puts "It's a cup, but its name is #{@name}"
+    end
+end
+
+cup1 = Cup.new
+# cup1.setName("Roger")
+cup1.getName()
